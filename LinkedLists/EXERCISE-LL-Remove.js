@@ -142,6 +142,7 @@ class LinkedList {
         const pre = this.get(index - 1)
         const temp = pre.next
         pre.next = temp.next
+        temp.next = null
         this.length--
         return temp
     }
